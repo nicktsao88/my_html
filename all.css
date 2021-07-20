@@ -1,0 +1,587 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----------layout-------------*/
+
+/*header*/
+
+.header{
+	display: flex;
+	background-color: rgba(34,34,34,0.4);
+	justify-content: space-between;
+	padding: 20px;
+	align-items: center;
+}
+.header .logo{
+	display: block;
+	width: 182px;
+	height: 36px;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/logo.png);
+}
+.header .label{
+	display: flex;
+}
+
+.header .label a{
+	padding-right: 20px;
+	padding-left: 20px;
+	color: white;
+	text-decoration: none;
+}
+.header .label a:hover{
+	padding-bottom: 20px;
+	color: #00cc99;
+	border-bottom: 5px solid #00cc99;
+}
+
+/*title*/
+.title{
+	font-weight: bolder;
+	color: #00cc99;
+	font-size: 38px;
+	margin-bottom: 30px;
+}
+.title .subtitle{
+	padding-left: 10px;
+	color: #b2b2b2;
+	font-size: 20px;
+}
+/*footer*/
+.footer{
+	display: flex;
+	background: #323228;
+	justify-content: space-between;
+	padding: 30px;
+	align-items: center;
+}
+.footer .icon img{
+	padding: 0px 10px;
+}
+.footer .logo p{
+	color: #848484;
+	text-align: right;
+	padding-right: 7px;
+	letter-spacing: 1px;
+	margin-top: 3px;
+}
+
+/*fake*/
+.fake{
+	color: white;
+	text-shadow: none;
+}
+/*-------------index---------------*/
+.index{
+	max-width: 1024px;
+	margin: auto;
+}
+.index .banner{
+	margin-bottom: 60px;
+	width: 1024px;
+	height: 560px;
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_index.png);
+}
+.index .banner .background_title{
+	margin-top: 100px;
+	margin-left: 40px;
+}
+.index .banner .background_title h1{
+	font-size: 48px;
+	letter-spacing: 3px;
+	line-height: 1.5;
+	color: #00cc90;
+	text-shadow: 0 0 2px #00cc90;
+	margin-bottom: 80px;
+}
+.index .banner .background_title .white{
+	color: white;
+	text-shadow: 0 0 2px #ffffff;
+}
+.index .banner .background_title a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	background: #00cc99;
+	padding: 15px 30px 15px 40px;
+	border-radius: 5px;
+	word-spacing: 30px;
+	font-weight: bolder;
+}
+.index .banner .background_title a:hover{
+	background: white;
+	color: #00cc99;
+}
+.index .banner .background_title a:active{
+	color: red;
+}
+
+.index .class{
+	margin: 0px 40px;
+	margin-bottom: 80px;
+}
+.index .class .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+.index .class .title a{
+	text-decoration: none;
+	font-size: 14px;
+	border: 2px solid #00cc99;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+	color: #00cc99;
+	font-weight: bolder;
+}
+.index .class .title a:hover{
+	background: #00cc99;
+	color: white;
+}
+.index .class .title a:active{
+	color: red;
+}
+
+.index .class .subject{
+	display: flex;
+	justify-content: space-between;
+}
+.index .class .subject .item{
+	width: 260px;
+	padding: 20px;
+	box-shadow: 0 0 5px gray;
+	text-align: center;
+}
+.index .class .subject .item h3{
+	margin: 10px 0px 10px 0px;
+	color: #4a4a4a;
+	font-size: 20px;
+	text-shadow: 0 0 1px #4a4a4a;
+}
+.index .class .subject .item p{
+	color: #b2b2b2;
+	font-weight: bold;
+}
+.index .compare{
+	margin: 0px 40px;
+	margin-bottom: 60px;
+}
+.index .compare table{
+	width: 100%;
+}
+.index .compare th{
+	text-align: center;
+	padding: 15px 0px;
+	border-bottom: 1px solid #ebebeb;
+	font-weight: bolder;
+	background: #ebebeb;
+}
+
+.index .compare td{
+	text-align: center;
+	padding: 15px 0px;
+	border-bottom: 1px solid #ebebeb;
+}
+.index .compare .green{
+	color: #00cc99;
+}
+.index .compare .bold{
+	font-weight: bolder;
+}
+.index .problem{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 40px;
+	background: #ebebeb;
+	padding: 120px 40px;
+	position: relative;
+	
+
+}
+.index .problem h2{
+	font-size: 30px;
+	letter-spacing: 2px;
+	line-height: 2;
+	font-weight: bolder;
+}
+.index .problem input{
+	margin-bottom: 20px;
+	width: 350px;
+	height: 50px;
+	border: none;
+	border-radius: 8px;
+	display: block;
+	padding: 0px 20px;
+	font-size: 20px;
+	text-shadow: 0 0 1px gray;
+}
+.index .problem .bottom{
+	position: absolute;
+	background: #00cc99;
+	width: 140px;
+	color: white;
+	font-weight: bolder;
+	letter-spacing: 10px; 
+	right: 40px;
+	cursor: pointer;
+}
+.index .problem .bottom:hover{
+	background: white;
+	color: #00cc99;
+	text-shadow: none;
+}
+.index .problem .bottom:active{
+	color: red;
+}
+
+/*--------------course--------------*/
+.course{
+	max-width: 1024px;
+	margin: auto;
+}
+.course .banner{
+	margin-bottom: 70px;	
+	height: 560px;
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_course.png);
+}
+.course .banner .topic{
+	margin: 0px 40px;
+}
+.course .banner .topic a{
+	font-size: 20px;
+	background: #00cc99;
+	padding: 15px 40px;
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+	border-radius: 10px;
+	word-spacing: 20px;
+}
+.course .banner .topic a:hover{
+	background: white;
+	color: #00cc99;
+}
+.course .banner .topic a:active{
+	color: red;
+}
+.course .banner .topic .topic_title{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+.course .banner .topic .topic_title h1{
+	padding: 60px 0 0 0;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: "Microsoft JhengHei";
+	
+}
+.course .banner .topic .topic_title h3{
+	color: #00cc99;
+	font-size: 24px;
+	padding: 15px 0 0 0;
+	font-weight: bold;
+}
+.course .main{
+	width: 650px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.course .main .teacher{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+	align-items: center;
+}
+.course .main .teacher h2{
+	width: 120px;
+	text-shadow: 0 0 1px #00cc99;
+	font-size: 40px;
+	color: #00cc99;
+	line-height: 1.3;
+	text-align: center;
+}
+.course .main .teacher .black{
+	text-shadow: 0 0 1px black;
+	color: black;
+}
+.course .main .teacher ul{
+	margin-top: 35px;
+}
+.course .main .teacher li{
+	font-weight: bolder;
+	margin-bottom: 10px;
+	color: #9b9b9b;
+	font-size: 15px;
+	word-spacing: 2em;
+}
+
+.course .main .special{
+	margin-bottom: 60px;
+}
+.course .main .special .decimal{
+	display: flex;
+}
+.course .main .special .decimal li{
+	letter-spacing: 1px;
+	text-shadow: 0 0 1px black;
+	line-height: 1.7;
+}
+.course .main .special .decimal ol{
+	letter-spacing: 1px;
+	text-shadow: 0 0 1px black;
+	line-height: 1.7;
+}
+.course .main .special .decimal .list{
+	margin-left: 30px;
+}
+.course .main .summary table{
+	width: 100%;
+}
+.course .main .summary tr:nth-child(odd){
+	text-shadow: 0 0 1px gray;
+	background: #ebebeb;
+}
+.course .main .summary tr:nth-child(even){
+	color: #b9b9b9;
+	text-shadow: 0 0 1px #b9b9b9;
+}
+.course .main .summary td{
+	padding: 20px 20px 20px 40px;
+}
+.course .action{
+	display: flex;
+	padding: 180px 60px;
+	background: #ebebeb;
+	justify-content: center;
+	align-items: flex-end;
+}
+.course .action h2{
+	font-size: 32px;
+	font-weight: bolder;
+	line-height: 2;
+	margin-right: 60px;
+}
+.course .action a{
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bolder;
+	background: #00cc99;
+	padding: 18px 40px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	word-spacing: 1em;
+}
+.course .action a:hover{
+	background: white;
+	color: #00cc99;
+}
+.course .action a:active{
+	color: red;
+}
+/*---------------FAQ----------------*/
+.FAQ{
+	max-width: 1024px;
+	margin: auto;
+}
+.FAQ .banner{
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_QA.png);
+	height: 560px;
+	width: 1024px;
+	margin-bottom: 60px;
+	position: relative;
+}
+.FAQ .banner .topic{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 110px;
+}
+.FAQ .banner .topic h1{
+	color: white;
+	font-size: 42px;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+.FAQ .banner .topic h3{
+	color: #00cc99;
+	font-size: 22px;
+	font-weight: bolder;
+	margin-bottom: 35px;
+}
+.FAQ .banner .topic input{
+	font-size: 28px;
+	height: 40px;
+	width: 550px;
+	border: none;
+	border-radius: 10px;
+}
+.FAQ .banner .topic .bottom{
+	height: 30px;
+	width: 30px;
+	background: url(search.png);
+	position: absolute;
+	right: 245px;
+	top: 300px;
+	cursor: pointer;
+}
+.FAQ .main{
+	width: 763px;
+	margin: 0 auto;
+}
+.FAQ .main .item .QA h3{
+	font-size: 20px;
+	text-shadow: 0 0 1px black;
+	margin-bottom: 10px;
+}
+.FAQ .main .item .QA p{
+	color: #a3a3a3;
+	line-height: 1.4;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.FAQ .main .item .QA a{
+	color: #00cc99;
+	text-decoration: none;
+}
+.FAQ .main .item a:hover{
+	border-bottom: 3px solid #00cc99;
+}
+.FAQ .main .item a:active{
+	background: #00cc99;
+	color: white;
+}
+.FAQ .main .item .QA ol{
+	list-style: decimal;
+	color: #a3a3a3;
+	line-height: 1.4;
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-left: 40px;
+}
+.FAQ .main .item .QA ul{
+	color: #a3a3a3;
+	line-height: 1.4;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.FAQ .main .item .QA li{
+	margin-left: 2em;
+	word-spacing: 1.5em;
+}
+.FAQ .main .item .back h4{
+	text-shadow: 0 0 1px black;
+	margin-bottom: 10px;
+}
+.FAQ .main .item .back .money{
+	display: flex;
+}
+.FAQ .main .item .back .money ul{
+	text-indent: 2em;
+	color: #a3a3a3;
+	line-height: 1.4;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.FAQ .main .item .back .money .method{
+	text-indent: 0em;
+	margin-left: 25px;
+}
+.FAQ .mail{
+	padding: 100px 40px 130px 40px;
+	background: #ebebeb;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.FAQ .mail h2{
+	font-size: 32px;
+	line-height: 1.5;
+	text-shadow: 0 0 1px black;
+}
+.FAQ .mail input{
+	display: block;
+	border: none;
+	margin-bottom: 20px;
+	width: 500px;
+	padding: 10px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.FAQ .mail textarea{
+	display: block;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	width: 500px;
+	height: 200px;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.FAQ .mail .bottom{
+	height: 50px;
+	position: absolute;
+	background: #00cc99;
+	width: 140px;
+	color: white;
+	font-weight: bolder;
+	letter-spacing: 10px; 
+	right: 40px;
+	cursor: pointer;
+}
+.FAQ .mail .bottom:hover{
+	background: white;
+	color: #00cc99;
+}
+.FAQ .mail .bottom:active{
+	color: red;
+}
